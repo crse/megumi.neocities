@@ -194,50 +194,13 @@ a{
 }
 
 a.textlink{
-	font-family:Vollkorn,Georgia,serif;
+	font-family:'dosis',sans-serif;
 	font-weight:400;
 	border-bottom: 1px dotted #EB5A49;
 	color:#F26F70}
 a:focus,
-a:hover{color:#aaa;text-decoration:line-through;}
+a:hover{color:#aaa;text-decoration:none;}
 
-
-/* Begin custom styles */
-
-.carousel-1, .carousel-2, .carousel-3, .carousel-4 {
-	height: 667px;
-}
-
-.carousel-1 h1, .carousel-2 h1, .carousel-3 h1, .carousel-4 h1{
-	font-family: "dosis";
-	font-weight: 600;
-	color:#FFF;
-	text-shadow: 0px 1px 10px #C7C8CA, 0px 2px 10px #575757, 0px 3px 10px #2f451d, 0px 4px 10px #0e2b48;
-}
-
-.carousel-1{
-	background-image: url(../img/cla.jpg);
-}
-
-.carousel-2{
-	background-image: url(../img/clx.gif);
-}
-
-.carousel-3{
-	background-image: url(../img/quote.jpg);
-}
-
-.carousel-4{
-	background-image: url(../img/pix-gra.jpg);
-}
-
-#hero-slider .overlay{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: transparent url("../pics/patternMeshBk.png") repeat scroll left top;
-	z-index:2;
-}
 
 h1{
 	font-family: "Roboto";
@@ -511,117 +474,6 @@ ul.social li a:after {
 
 
 
-
-/* Effect 18: cross */
-.cl-effect-18 {
-	position: relative;
-	z-index: 1;
-	margin-top: 30px;
-}
-
-.cl-effect-18 a {
-	padding: 0 5px;
-	color: #e2d3ba;
-	font-weight: 700;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	transition: color 0.3s;
-}
-
-.cl-effect-18 a::before,
-.cl-effect-18 a::after {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 50%;
-	
-	height: 9px;
-	margin-top: -1px;
-	background: #333;
-	content: '';
-	z-index: -1;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
-	transition: transform 0.3s, opacity 0.3s;
-	pointer-events: none;
-}
-
-.cl-effect-18 a::before {
-	-webkit-transform: translateY(-20px);
-	-moz-transform: translateY(-20px);
-	transform: translateY(-20px);
-}
-
-.cl-effect-18 a::after {
-	-webkit-transform: translateY(20px);
-	-moz-transform: translateY(20px);
-	transform: translateY(20px);
-}
-
-.cl-effect-18 a:hover,
-.cl-effect-18 a:focus {
-	color: #fff;
-}
-
-.cl-effect-18 a:hover::before,
-.cl-effect-18 a:hover::after,
-.cl-effect-18 a:focus::before,
-.cl-effect-18 a:focus::after {
-	opacity: 0.7;
-}
-
-.cl-effect-18 a:hover::before,
-.cl-effect-18 a:focus::before {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.cl-effect-18 a:hover::after,
-.cl-effect-18 a:focus::after {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-
-
-/* Effect 1: Brackets */
-.cl-effect-1 text::before,
-.cl-effect-1 text::after {
-	display: inline-block;
-	opacity: 0;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
-	transition: transform 0.3s, opacity 0.2s;
-}
-
-.cl-effect-1 text::before {
-	margin-right: 10px;
-	content: '[';
-	-webkit-transform: translateX(20px);
-	-moz-transform: translateX(20px);
-	transform: translateX(20px);
-}
-
-.cl-effect-1 text::after {
-	margin-left: 10px;
-	content: ']';
-	-webkit-transform: translateX(-20px);
-	-moz-transform: translateX(-20px);
-	transform: translateX(-20px);
-}
-
-.cl-effect-1 text:hover::before,
-.cl-effect-1 text:hover::after,
-.cl-effect-1 text:focus::before,
-.cl-effect-1 text:focus::after {
-	opacity: 1;
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	transform: translateX(0px);
-}
-
 .container0{
 	padding: 0 30px 0 30px;
 }
@@ -676,6 +528,27 @@ h6{font-family: source code pro; font-size: 19px;}
 
 .bigtext {color:#AD4954}
 
-.padding-0 {padding: 20px 0}
+.padding-0 {padding: 1px 0 0 0}
 
 .linkout {text-transform: none;}
+
+a.simplea {
+    color: #fff;
+    font-size: inherit;
+    font-family: 'Inconsolata';
+    font-weight: inherit;
+    text-decoration: none;
+    text-transform: none;
+    border-bottom: 4px dotted #AD4954;
+    padding-bottom: 0;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s;
+    letter-spacing: 0;
+}
+a.simplea:hover {color: #ffa8a8;}
+
+a.linkprof {
+    letter-spacing: 10px;
+}

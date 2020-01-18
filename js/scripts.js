@@ -110,7 +110,7 @@ $(document).ready(function($) {
     // There are many options available - see http://areaaperta.com/nicescroll/ for further usage variables
     // =======================================================
     var nice = $("html").niceScroll({
-        cursorcolor: "#202020",
+        cursorcolor: "#ea6270",
         scrollspeed: 60,
         mousescrollstep: 30,
         boxzoom: false,
@@ -118,7 +118,7 @@ $(document).ready(function($) {
         cursorborder: "0 solid #202020",
         cursorborderradius: "0",
         cursorwidth: 10,
-        background: "#666",
+        background: "#222",
         horizrailenabled: false
     });
 
